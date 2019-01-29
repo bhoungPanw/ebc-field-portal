@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./BriefingTopics.css";
+import data from "./../../assets/content/BriefingTopics.json";
 
 class BriefingTopics extends Component {
   constructor(props) {
@@ -179,6 +180,9 @@ class BriefingTopics extends Component {
         }
       }
     };
+  }
+  componentWillMount() {
+    this.setState({ ...data });
   }
   render() {
     let location = this.props.match.params.id || "ebc";
