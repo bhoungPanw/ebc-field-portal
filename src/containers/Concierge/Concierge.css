@@ -1,0 +1,65 @@
+.App-container .ebc-field-portal-Concierge .App-body {
+  padding: 0px 60px; }
+  .App-container .ebc-field-portal-Concierge .App-body .concierge-content-container {
+    margin-bottom: 60px; }
+    .App-container .ebc-field-portal-Concierge .App-body .concierge-content-container .list.concierge ul li {
+      text-align: left;
+      display: block; }
+  .App-container .ebc-field-portal-Concierge .App-body .save-copy-container {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px; }
+    .App-container .ebc-field-portal-Concierge .App-body .save-copy-container .btn-save {
+      display: inline-block;
+      margin-left: 20px;
+      background: #73d487;
+      padding: 15px 30px;
+      color: white;
+      border-radius: 3px; }
+    .App-container .ebc-field-portal-Concierge .App-body .save-copy-container .save-copy {
+      line-height: 4; }
+  .App-container .ebc-field-portal-Concierge .App-body .catering-container {
+    margin-bottom: 120px; }
+    .App-container .ebc-field-portal-Concierge .App-body .catering-container span {
+      display: block;
+      margin: 0px 120px; }
+
+@media (max-width: 1100px) {
+  .ebc-field-portal-Concierge .App-container .header-container {
+    background-size: 602px; }
+    .ebc-field-portal-Concierge .App-container .header-container .App-title {
+      top: 240px;
+      padding: 5px; }
+      .ebc-field-portal-Concierge .App-container .header-container .App-title h1 {
+        font-weight: 300;
+        line-height: 38px;
+        font-size: 36px;
+        letter-spacing: 0.18em; }
+  .ebc-field-portal-Concierge .App-container .App-body .cards-container {
+    grid-template-columns: 1fr 1fr; }
+    .ebc-field-portal-Concierge .App-container .App-body .cards-container .card-container {
+      grid-column: span 1; }
+  .ebc-field-portal-Concierge .App-container .App-body .catering-container {
+    padding: 20px; } }
+
+@media (max-width: 680px) {
+  .ebc-field-portal-Concierge .App-container .header-container {
+    background-size: 402px;
+    height: 300px; }
+    .ebc-field-portal-Concierge .App-container .header-container .App-title {
+      top: 160px;
+      padding: 5px; }
+      .ebc-field-portal-Concierge .App-container .header-container .App-title h1 {
+        font-weight: 300;
+        line-height: 38px;
+        font-size: 16px;
+        letter-spacing: 0.18em;
+        margin: 0px; }
+  .ebc-field-portal-Concierge .App-container .App-body .dropdown-container {
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    padding: 10px 80px; }
+  .ebc-field-portal-Concierge .App-container .App-body .cards-container {
+    grid-template-columns: 1fr; }
+    .ebc-field-portal-Concierge .App-container .App-body .cards-container .card-container {
+      grid-column: span 1; } }

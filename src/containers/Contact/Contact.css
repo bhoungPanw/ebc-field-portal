@@ -1,0 +1,46 @@
+.App-container .ebc-field-portal-Contact .App-body {
+  padding: 0px 60px; }
+  .App-container .ebc-field-portal-Contact .App-body .contact-content-container .list ul .list-item span {
+    display: block; }
+  .App-container .ebc-field-portal-Contact .App-body .contact-content-container:nth-child(1) a {
+    color: #73d487; }
+  .App-container .ebc-field-portal-Contact .App-body .contact-content-container:nth-child(2) .page-title {
+    color: #f3723c; }
+  .App-container .ebc-field-portal-Contact .App-body .contact-content-container:nth-child(2) a {
+    color: #ffc528; }
+  .App-container .ebc-field-portal-Contact .App-body .contact-content-container:nth-child(2) .list ul div.profile-picture {
+    border: 5px solid #f3723c; }
+
+@media (max-width: 1100px) {
+  .beacon-Home .App-container .header-container {
+    background-size: 602px; }
+    .beacon-Home .App-container .header-container .App-title {
+      top: 240px;
+      padding: 5px; }
+      .beacon-Home .App-container .header-container .App-title h1 {
+        font-weight: 300;
+        line-height: 38px;
+        font-size: 36px;
+        letter-spacing: 0.18em; } }
+
+@media (max-width: 680px) {
+  .beacon-Home .App-container .header-container {
+    background-size: 402px;
+    height: 300px; }
+    .beacon-Home .App-container .header-container .App-title {
+      top: 160px;
+      padding: 5px; }
+      .beacon-Home .App-container .header-container .App-title h1 {
+        font-weight: 300;
+        line-height: 38px;
+        font-size: 16px;
+        letter-spacing: 0.18em;
+        margin: 0px; }
+  .beacon-Home .App-container .App-body .dropdown-container {
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    padding: 10px 80px; }
+  .beacon-Home .App-container .App-body .cards-container {
+    grid-template-columns: 1fr; }
+    .beacon-Home .App-container .App-body .cards-container .card-container {
+      grid-column: span 1; } }

@@ -1,0 +1,107 @@
+.ebc-field-portal-Home {
+  .App-body {
+    padding: 0px 60px;
+    section {
+      margin-bottom: 70px;
+    }
+    .content-container.briefing-topics {
+      grid-template-columns: 1fr;
+      display: block;
+    }
+    .content-container {
+      display: grid;
+      display: -ms-grid;
+      -ms-grid-columns: 1fr 2fr;
+      grid-gap: 80px;
+      grid-template-columns: 1fr 2fr;
+      margin-bottom: 60px;
+      .title {
+        color: #30b097;
+        font-size: 20px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        font-weight: 800;
+        line-height: 2.5em;
+      }
+      .fast-facts {
+        -ms-grid-column: 1;
+        -ms-grid-row: 1;
+        ul {
+          list-style: none;
+          padding: 0;
+          li {
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+    .ebc-virtual-tour {
+      -ms-grid-column: 2;
+      -ms-grid-row: 1;
+      text-align: center;
+      .title {
+        color: #30b097;
+        font-size: 20px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        font-weight: 800;
+        line-height: 2.5em;
+      }
+      .virtual-tour {
+        width: 100%;
+        iframe {
+          width: 100%;
+          min-height: 390px;
+          border: 0px;
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.modal {
+  .modal-dialog {
+    min-width: calc(100% - 280px);
+  }
+  .modal-body {
+    position: relative;
+    background: none;
+    padding: 25%;
+    font-size: 0;
+  }
+  iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    left: 0;
+    top: 0;
+  }
+}
+
+$breakpoint-laptop: 1100px;
+$breakpoint-phone: 680px;
+
+@media (max-width: $breakpoint-laptop) {
+  .ebc-field-portal-Home {
+    .App-body {
+      .content-container {
+        grid-gap: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-phone) {
+  .ebc-field-portal-Home {
+    .App-body {
+      .content-container {
+        grid-template-columns: 1fr;
+        margin-bottom: 0px;
+      }
+    }
+  }
+}

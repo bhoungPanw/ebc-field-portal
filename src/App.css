@@ -1,0 +1,551 @@
+body {
+  background: #fbfbfb; }
+
+html,
+body,
+.App.ebc-field-portal {
+  color: #49535b;
+  height: 100%;
+  background: #fbfbfb; }
+
+.App.ebc-field-portal {
+  font-family: "Lato", sans-serif;
+  position: relative;
+  margin: 20px; }
+  .App.ebc-field-portal .App-body {
+    padding: 60px; }
+    .App.ebc-field-portal .App-body .save-copy-container {
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 20px; }
+      .App.ebc-field-portal .App-body .save-copy-container .btn-save {
+        display: inline-block;
+        margin-left: 20px;
+        background: #73d487;
+        padding: 15px 30px;
+        color: white;
+        border-radius: 3px; }
+      .App.ebc-field-portal .App-body .save-copy-container .save-copy {
+        line-height: 4; }
+  .App.ebc-field-portal .App-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0 8px 8px rgba(54, 66, 75, 0.05), 0 2px 2px rgba(54, 66, 75, 0.05);
+    background: white; }
+    .App.ebc-field-portal .App-container .header-container {
+      position: relative;
+      height: 300px;
+      width: 100%;
+      background: linear-gradient(61.94deg, rgba(65, 96, 122, 0.69) 2.85%, rgba(115, 212, 135, 0.69) 96.55%), url("./assets/img/hero.png") no-repeat center center;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .App.ebc-field-portal .App-container .header-container .App-title {
+        color: white;
+        text-align: center; }
+        .App.ebc-field-portal .App-container .header-container .App-title h1 {
+          font-size: 1.5em;
+          font-weight: 300;
+          line-height: 48px;
+          font-size: 36px;
+          letter-spacing: 0.23em;
+          text-transform: uppercase;
+          font-style: normal; }
+        .App.ebc-field-portal .App-container .header-container .App-title h2 {
+          font-size: 1em;
+          text-align: right;
+          margin: 0; }
+    .App.ebc-field-portal .App-container .App-header {
+      text-transform: uppercase;
+      min-height: auto;
+      display: block; }
+      .App.ebc-field-portal .App-container .App-header .navigation-container {
+        position: relative; }
+        .App.ebc-field-portal .App-container .App-header .navigation-container .navbar {
+          background: linear-gradient(91.54deg, #41607a 0.46%, #288993 38.45%, #30b097 69.94%, #73d487 98.71%);
+          box-shadow: none;
+          border: 0;
+          border-radius: 0px; }
+          .App.ebc-field-portal .App-container .App-header .navigation-container .navbar .navbar-header .navbar-toggle {
+            border: none; }
+            .App.ebc-field-portal .App-container .App-header .navigation-container .navbar .navbar-header .navbar-toggle span {
+              background: white; }
+        .App.ebc-field-portal .App-container .App-header .navigation-container .location-switch {
+          position: absolute;
+          top: -25px;
+          right: 20px;
+          background: white;
+          border-radius: 3px;
+          position: relative;
+          color: #49535b;
+          border: 0;
+          text-transform: uppercase;
+          padding: 15px; }
+        .App.ebc-field-portal .App-container .App-header .navigation-container ul.navigation li a {
+          color: white;
+          text-shadow: none;
+          font-weight: 300;
+          position: relative; }
+          .App.ebc-field-portal .App-container .App-header .navigation-container ul.navigation li a .btn-container {
+            position: absolute;
+            top: -20px;
+            color: #49535b; }
+            .App.ebc-field-portal .App-container .App-header .navigation-container ul.navigation li a .btn-container .btn-location {
+              white-space: nowrap;
+              background: white;
+              padding: 10px 30px;
+              border-radius: 3px; }
+        .App.ebc-field-portal .App-container .App-header .navigation-container ul.navigation li.active a {
+          font-weight: 600;
+          background: rgba(38, 51, 71, 0.2);
+          box-shadow: none;
+          border-bottom: 5px solid rgba(255, 255, 255, 0.5); }
+    .App.ebc-field-portal .App-container .App-body {
+      a: hover;
+        a-text-decoration: none; }
+      .App.ebc-field-portal .App-container .App-body .btn-request {
+        color: white;
+        background: #41607a;
+        padding: 10px 35px;
+        border-radius: 3px;
+        text-transform: uppercase;
+        text-align: center;
+        transition: all 0.25s; }
+      .App.ebc-field-portal .App-container .App-body .btn-request:hover {
+        transform: translateY(-3px) scale(1.025);
+        box-shadow: 0 5px 8px rgba(71, 82, 90, 0.2); }
+      .App.ebc-field-portal .App-container .App-body .cards-container {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px; }
+        .App.ebc-field-portal .App-container .App-body .cards-container .card-container:nth-child(1) {
+          -ms-grid-column: 1;
+          -ms-grid-row: 1; }
+        .App.ebc-field-portal .App-container .App-body .cards-container .card-container:nth-child(2) {
+          -ms-grid-column: 2;
+          -ms-grid-row: 1; }
+          .App.ebc-field-portal .App-container .App-body .cards-container .card-container:nth-child(2) .card-header {
+            color: #2d9695; }
+          .App.ebc-field-portal .App-container .App-body .cards-container .card-container:nth-child(2) .btn-container .btn-request {
+            background: #2d9695; }
+        .App.ebc-field-portal .App-container .App-body .cards-container .card-container:nth-child(3) {
+          -ms-grid-column: 2;
+          -ms-grid-row: 1; }
+          .App.ebc-field-portal .App-container .App-body .cards-container .card-container:nth-child(3) .card-header {
+            color: #73d487; }
+          .App.ebc-field-portal .App-container .App-body .cards-container .card-container:nth-child(3) .btn-container .btn-request {
+            background: #73d487; }
+        .App.ebc-field-portal .App-container .App-body .cards-container .card-container {
+          position: relative;
+          background: white;
+          width: 100%;
+          overflow: visible;
+          min-height: 260px;
+          box-shadow: 0px 2px 2px rgba(54, 66, 75, 0.15); }
+          .App.ebc-field-portal .App-container .App-body .cards-container .card-container .card-header {
+            position: relative;
+            color: #41607a;
+            background: none; }
+            .App.ebc-field-portal .App-container .App-body .cards-container .card-container .card-header .title {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: 900;
+              line-height: 21px;
+              font-size: 16px;
+              letter-spacing: 0.03em;
+              text-transform: uppercase;
+              min-height: 63px; }
+          .App.ebc-field-portal .App-container .App-body .cards-container .card-container .card-body {
+            display: table;
+            color: #49535b;
+            text-align: center;
+            padding-left: 30px;
+            padding-right: 30px;
+            position: relative; }
+            .App.ebc-field-portal .App-container .App-body .cards-container .card-container .card-body .description {
+              line-height: 21px;
+              font-size: 14px;
+              letter-spacing: 0.0125em; }
+          .App.ebc-field-portal .App-container .App-body .cards-container .card-container .btn-container {
+            position: absolute;
+            left: 50%;
+            bottom: -7%;
+            transform: translate(-50%, 7%);
+            cursor: pointer; }
+      .App.ebc-field-portal .App-container .App-body #executiveBriefing {
+        grid-gap: 50px; }
+      .App.ebc-field-portal .App-container .App-body .quicklinks-container {
+        text-align: center; }
+        .App.ebc-field-portal .App-container .App-body .quicklinks-container .links-container {
+          display: -ms-grid;
+          display: grid;
+          -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+          -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
+          grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+          grid-auto-rows: 1fr;
+          grid-gap: 20px; }
+          .App.ebc-field-portal .App-container .App-body .quicklinks-container .links-container .quick-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #e6e7e8;
+            border-radius: 3px;
+            padding: 10px 30px;
+            color: #49535b;
+            height: 100%;
+            cursor: pointer; }
+          .App.ebc-field-portal .App-container .App-body .quicklinks-container .links-container a {
+            display: inline-block; }
+          .App.ebc-field-portal .App-container .App-body .quicklinks-container .links-container a:hover {
+            text-decoration: none; }
+          .App.ebc-field-portal .App-container .App-body .quicklinks-container .links-container a:nth-child(1) {
+            -ms-grid-column: 1;
+            -ms-grid-row: 1; }
+          .App.ebc-field-portal .App-container .App-body .quicklinks-container .links-container a:nth-child(2) {
+            -ms-grid-column: 2;
+            -ms-grid-row: 1; }
+          .App.ebc-field-portal .App-container .App-body .quicklinks-container .links-container a:nth-child(3) {
+            -ms-grid-column: 3;
+            -ms-grid-row: 1; }
+          .App.ebc-field-portal .App-container .App-body .quicklinks-container .links-container a:nth-child(4) {
+            -ms-grid-column: 4;
+            -ms-grid-row: 1; }
+          .App.ebc-field-portal .App-container .App-body .quicklinks-container .links-container a:nth-child(5) {
+            -ms-grid-column: 5;
+            -ms-grid-row: 1; }
+          .App.ebc-field-portal .App-container .App-body .quicklinks-container .links-container a:nth-child(6) {
+            -ms-grid-column: 6;
+            -ms-grid-row: 1; }
+          .App.ebc-field-portal .App-container .App-body .quicklinks-container .links-container .quick-link:hover {
+            box-shadow: 0px 8px 18px rgba(54, 66, 75, 0.15), 0px 2px 2px rgba(54, 66, 75, 0.15);
+            text-decoration: none;
+            color: #73d487;
+            border-image: linear-gradient(91.54deg, #41607a 0.46%, #73d487 98.71%) 1 stretch; }
+        .App.ebc-field-portal .App-container .App-body .quicklinks-container #briefingDocuments {
+          display: -ms-grid;
+          -ms-grid-columns: 1fr 1fr 1fr;
+          -ms-grid-rows: 1fr 1fr 1fr;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-gap: 15px; }
+          .App.ebc-field-portal .App-container .App-body .quicklinks-container #briefingDocuments a {
+            display: inline-block; }
+          .App.ebc-field-portal .App-container .App-body .quicklinks-container #briefingDocuments a:nth-child(1) {
+            -ms-grid-column: 1;
+            -ms-grid-row: 1; }
+          .App.ebc-field-portal .App-container .App-body .quicklinks-container #briefingDocuments a:nth-child(2) {
+            -ms-grid-column: 2;
+            -ms-grid-row: 1; }
+          .App.ebc-field-portal .App-container .App-body .quicklinks-container #briefingDocuments a:nth-child(3) {
+            -ms-grid-column: 3;
+            -ms-grid-row: 1; }
+          .App.ebc-field-portal .App-container .App-body .quicklinks-container #briefingDocuments a:nth-child(4) {
+            -ms-grid-column: 1;
+            -ms-grid-row: 2; }
+          .App.ebc-field-portal .App-container .App-body .quicklinks-container #briefingDocuments a:nth-child(5) {
+            -ms-grid-column: 2;
+            -ms-grid-row: 2; }
+          .App.ebc-field-portal .App-container .App-body .quicklinks-container #briefingDocuments a:nth-child(6) {
+            -ms-grid-column: 3;
+            -ms-grid-row: 2; }
+          .App.ebc-field-portal .App-container .App-body .quicklinks-container #briefingDocuments a:nth-child(7) {
+            -ms-grid-column: 1;
+            -ms-grid-row: 3; }
+          .App.ebc-field-portal .App-container .App-body .quicklinks-container #briefingDocuments a:nth-child(8) {
+            -ms-grid-column: 2;
+            -ms-grid-row: 3; }
+          .App.ebc-field-portal .App-container .App-body .quicklinks-container #briefingDocuments a:nth-child(9) {
+            -ms-grid-column: 3;
+            -ms-grid-row: 3; }
+          .App.ebc-field-portal .App-container .App-body .quicklinks-container #briefingDocuments a:last-child:nth-child(7) {
+            grid-column: 2; }
+        .App.ebc-field-portal .App-container .App-body .quicklinks-container .quicklink-wrapper {
+          position: relative; }
+      .App.ebc-field-portal .App-container .App-body .list ul {
+        list-style: none;
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 1fr;
+        -ms-grid-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+        padding: 0; }
+        .App.ebc-field-portal .App-container .App-body .list ul .name {
+          font-weight: bold;
+          font-size: 20px; }
+        .App.ebc-field-portal .App-container .App-body .list ul div.profile-picture {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          margin-right: 20px;
+          border: 5px solid #30b097;
+          overflow: hidden;
+          position: relative; }
+        .App.ebc-field-portal .App-container .App-body .list ul li {
+          display: flex;
+          align-items: center; }
+        .App.ebc-field-portal .App-container .App-body .list ul li:nth-child(1) {
+          -ms-grid-column: 1;
+          -ms-grid-row: 1; }
+        .App.ebc-field-portal .App-container .App-body .list ul li:nth-child(2) {
+          -ms-grid-column: 2;
+          -ms-grid-row: 1; }
+        .App.ebc-field-portal .App-container .App-body .list ul li:nth-child(3) {
+          -ms-grid-column: 1;
+          -ms-grid-row: 2; }
+        .App.ebc-field-portal .App-container .App-body .list ul li:nth-child(4) {
+          -ms-grid-column: 2;
+          -ms-grid-row: 2; }
+        .App.ebc-field-portal .App-container .App-body .list ul li:nth-child(5) {
+          -ms-grid-column: 1;
+          -ms-grid-row: 3; }
+        .App.ebc-field-portal .App-container .App-body .list ul li:nth-child(6) {
+          -ms-grid-column: 2;
+          -ms-grid-row: 3; }
+        .App.ebc-field-portal .App-container .App-body .list ul li:nth-child(7) {
+          -ms-grid-column: 1;
+          -ms-grid-row: 4; }
+        .App.ebc-field-portal .App-container .App-body .list ul li:nth-child(8) {
+          -ms-grid-column: 2;
+          -ms-grid-row: 4; }
+        .App.ebc-field-portal .App-container .App-body .list ul li:nth-child(9) {
+          -ms-grid-column: 1;
+          -ms-grid-row: 5; }
+
+.modal-dialog .modal-title {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(91.54deg, #41607a 0.46%, #288993 38.45%, #30b097 69.94%, #73d487 98.71%); }
+
+.modal-dialog .subforms {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  padding: 20px; }
+  .modal-dialog .subforms a:hover {
+    text-decoration: none; }
+  .modal-dialog .subforms .subform {
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border: 2px solid #e6e7e8;
+    border-radius: 3px;
+    padding: 10px 30px;
+    color: #49535b;
+    height: 100%; }
+  .modal-dialog .subforms .subform:hover {
+    box-shadow: 0px 8px 18px rgba(54, 66, 75, 0.15), 0px 2px 2px rgba(54, 66, 75, 0.15);
+    text-decoration: none;
+    color: #73d487;
+    border-image: linear-gradient(91.54deg, #41607a 0.46%, #288993 38.45%, #30b097 69.94%, #73d487 98.71%) 1 stretch; }
+
+/**
+ * CBC Specific Styling
+*/
+.App.App-cbc {
+  color: #49535b;
+  height: 100%; }
+
+.App.App-cbc .App-container .header-container {
+  background: linear-gradient(90.39deg, rgba(245, 98, 52, 0.6) 0.46%, rgba(255, 153, 0, 0.6) 51.76%, rgba(255, 214, 0, 0.6) 103.72%), url("./assets/img/hero-cbc.png") no-repeat center center;
+  background-size: cover; }
+
+.App.App-cbc .App-container .App-header .navigation-container .navbar {
+  background: linear-gradient(91.43deg, #f56234 0.46%, #ff9900 51.76%, #ffd600 103.72%); }
+
+.App.App-cbc .App-container .App-body .btn-request {
+  background: #f56234; }
+
+.App.App-cbc .App-container .App-body .save-copy-container .btn-save {
+  background: #f56234; }
+
+.App.App-cbc .App-container .App-body .briefing-topics .title,
+.App.App-cbc .App-container .App-body .content-container .title {
+  color: #f56234; }
+
+.App.App-cbc .App-container .App-body .cards-container .card-container .card-header {
+  color: #f56234; }
+
+.App.App-cbc .App-container .App-body .cards-container .card-container .btn-container .btn-request {
+  background: #f56234; }
+
+.App.App-cbc .App-container .App-body .cards-container .card-container:nth-child(2) .card-header {
+  color: #f89605; }
+
+.App.App-cbc .App-container .App-body .cards-container .card-container:nth-child(2) .btn-container .btn-request {
+  background: #f89605; }
+
+.App.App-cbc .App-container .App-body .cards-container .card-container:nth-child(3) .card-header {
+  color: #fad100; }
+
+.App.App-cbc .App-container .App-body .cards-container .card-container:nth-child(3) .btn-container .btn-request {
+  background: #fad100; }
+
+.App.App-cbc .App-container .App-body .quicklinks-container .links-container .quick-link:hover {
+  color: #fad100;
+  border-image: linear-gradient(91.54deg, #f56234 0.46%, #fad100 98.71%) 1 stretch; }
+
+.App.App-cbc .App-container .App-body .contact-content-container a {
+  color: #fad100; }
+
+.App.App-cbc .App-container .App-body .contact-content-container .list ul .list-item div.profile-picture {
+  border: 5px solid #f56234; }
+
+.App.App-cbc .App-container .App-body .contact-content-container:nth-child(2) a {
+  color: #73d487; }
+
+.App.App-cbc .App-container .App-body .contact-content-container:nth-child(2) .page-title {
+  color: #41607a; }
+
+.App.App-cbc .App-container .App-body .contact-content-container:nth-child(2) .list ul .list-item div.profile-picture {
+  border: 5px solid #73d487; }
+
+.App.App-cbc .page-title,
+.App.App-cbc .ebc-field-portal-BriefingTopics
+.App-container
+.App-body
+.content-container
+.title,
+.App.App-cbc .App .App-container .App-body .cards-container .card-container .card-header {
+  color: #f56234; }
+
+/**
+ * Create custom breakpoint for bootstrap navbar collapse
+*/
+@media (max-width: 992px) {
+  div.navbar-header {
+    float: none !important; }
+  button.navbar-toggle {
+    display: block !important; }
+  button.navbar-toggle {
+    display: block !important; }
+  .navbar-collapse {
+    border-top: 1px solid transparent !important;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1) !important; }
+  div.navbar-collapse.collapse {
+    display: none !important; }
+  div.navbar-collapse.collapse.in {
+    display: block !important; }
+  .navbar-nav {
+    float: none !important;
+    margin: 7.5px -15px; }
+  .navbar-nav > li {
+    float: none !important; }
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  .App .App-container .App-header .navigation-container ul li a .btn-container {
+    position: inherit;
+    padding-top: 30px;
+    width: 180px;
+    color: #49535b; }
+    .App .App-container .App-header .navigation-container ul li a .btn-container .btn-location {
+      white-space: nowrap;
+      background: white;
+      padding: 10px 30px;
+      border-radius: 3px; } }
+
+/**
+ * Fancy Types for title
+*/
+.page-title-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.page-title-container:before {
+  content: "";
+  position: absolute;
+  height: 35px;
+  border-bottom: 1px solid #e6e7e8;
+  top: 0;
+  width: 100%;
+  z-index: 1; }
+
+.page-title {
+  color: #30b097;
+  background: white;
+  font-weight: 800;
+  padding: 20px 100px;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  display: inline-block;
+  z-index: 2; }
+
+@media (max-width: 1100px) {
+  .App .App-container .App-body .cards-container {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr; }
+  .App .App-container .App-body .quicklinks-container .links-container {
+    grid-template-columns: 1fr 1fr; }
+  .App .App-container .App-body .quicklinks-container #briefingDocuments {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px; }
+  .App .App-container .App-body .page-title {
+    padding: 20px; } }
+
+@media (max-width: 680px) {
+  .content-container {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 20px 0px; }
+    .content-container .fast-facts {
+      text-align: center; }
+      .content-container .fast-facts ul {
+        text-align: left; }
+  .App .App-container .App-header .navigation-container ul li a .btn-container {
+    position: inherit; }
+  .App .App-container .App-body {
+    padding: 20px; }
+    .App .App-container .App-body .list ul {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr; }
+      .App .App-container .App-body .list ul .list-item div.profile-picture {
+        width: 70px;
+        height: 70px;
+        margin-right: 10px; }
+    .App .App-container .App-body .quicklinks-container {
+      padding: 0 20px; }
+      .App .App-container .App-body .quicklinks-container .links-container {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        padding: 10px;
+        grid-gap: 10px;
+        margin: 10px; }
+      .App .App-container .App-body .quicklinks-container #briefingDocuments {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-gap: 15px; } }
+
+/**
+ *
+ * CSS Grid Fallback
+ */
+@supports not (display: grid) {
+  .grid {
+    display: flex;
+    flex-flow: row wrap; }
+  .cards-container .card-container {
+    margin: 10px; }
+  .topics-container {
+    margin: 10px; }
+  #briefingDocuments a {
+    margin: 10px;
+    min-height: 80px; }
+  .list ul li {
+    padding: 20px; }
+  .links-container a {
+    margin: 10px; } }

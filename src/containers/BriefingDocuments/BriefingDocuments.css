@@ -1,0 +1,40 @@
+.ebc-field-portal-BriefingDocuments .App-container .App-body {
+  padding: 0px 60px; }
+
+@media (max-width: 1100px) {
+  .beacon-Home .App-container .header-container {
+    background-size: 602px; }
+    .beacon-Home .App-container .header-container .App-title {
+      top: 240px;
+      padding: 5px; }
+      .beacon-Home .App-container .header-container .App-title h1 {
+        font-weight: 300;
+        line-height: 38px;
+        font-size: 36px;
+        letter-spacing: 0.18em; }
+  .beacon-Home .App-container .App-body .cards-container {
+    grid-template-columns: 1fr 1fr; }
+    .beacon-Home .App-container .App-body .cards-container .card-container {
+      grid-column: span 1; } }
+
+@media (max-width: 680px) {
+  .beacon-Home .App-container .header-container {
+    background-size: 402px;
+    height: 300px; }
+    .beacon-Home .App-container .header-container .App-title {
+      top: 160px;
+      padding: 5px; }
+      .beacon-Home .App-container .header-container .App-title h1 {
+        font-weight: 300;
+        line-height: 38px;
+        font-size: 16px;
+        letter-spacing: 0.18em;
+        margin: 0px; }
+  .beacon-Home .App-container .App-body .dropdown-container {
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    padding: 10px 80px; }
+  .beacon-Home .App-container .App-body .cards-container {
+    grid-template-columns: 1fr; }
+    .beacon-Home .App-container .App-body .cards-container .card-container {
+      grid-column: span 1; } }

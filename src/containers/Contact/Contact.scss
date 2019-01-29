@@ -1,0 +1,95 @@
+.App-container {
+  .ebc-field-portal-Contact {
+    .App-body {
+      padding: 0px 60px;
+      .contact-content-container {
+        .list {
+          ul {
+            .list-item {
+              span {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+      .contact-content-container:nth-child(1) {
+        a {
+          color: #73d487;
+        }
+      }
+      .contact-content-container:nth-child(2) {
+        .page-title {
+          color: #f3723c;
+        }
+        a {
+          color: #ffc528;
+        }
+        .list {
+          ul {
+            div.profile-picture {
+              border: 5px solid #f3723c;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+$breakpoint-laptop: 1100px;
+$breakpoint-phone: 680px;
+
+@media (max-width: $breakpoint-laptop) {
+  .beacon-Home {
+    .App-container {
+      .header-container {
+        background-size: 602px;
+        .App-title {
+          top: 240px;
+          padding: 5px;
+          h1 {
+            font-weight: 300;
+            line-height: 38px;
+            font-size: 36px;
+            letter-spacing: 0.18em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-phone) {
+  .beacon-Home {
+    .App-container {
+      .header-container {
+        background-size: 402px;
+        height: 300px;
+        .App-title {
+          top: 160px;
+          padding: 5px;
+          h1 {
+            font-weight: 300;
+            line-height: 38px;
+            font-size: 16px;
+            letter-spacing: 0.18em;
+            margin: 0px;
+          }
+        }
+      }
+      .App-body {
+        .dropdown-container {
+          grid-template-columns: 1fr;
+          grid-gap: 5px;
+          padding: 10px 80px;
+        }
+        .cards-container {
+          grid-template-columns: 1fr;
+          .card-container {
+            grid-column: span 1;
+          }
+        }
+      }
+    }
+  }
+}
