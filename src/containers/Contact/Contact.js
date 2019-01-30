@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Contact.css";
+import data from "./../../assets/content/Contact.json";
 
 class Contact extends Component {
   constructor(props) {
@@ -178,6 +179,10 @@ class Contact extends Component {
     };
   }
 
+  componentWillMount() {
+    this.setState({ ...data });
+  }
+
   displayProfilePic = item => {
     if (item.thumbnail) {
       const picture = require("./../../assets/img/" + item.thumbnail);
@@ -201,7 +206,7 @@ class Contact extends Component {
           <div className="App-body">
             {content[location].contacts.map(item => {
               return (
-                <div className="contact-content-container">
+                <div key={item.title} className="contact-content-container">
                   <div className="page-title-container">
                     <p className="page-title fancy">
                       <span>{item.title}</span>
@@ -209,9 +214,9 @@ class Contact extends Component {
                   </div>
                   <div className="list">
                     <ul>
-                      {item.list.map(listItem => {
+                      {item.list.map((listItem, idx) => {
                         return (
-                          <li key={listItem.phone} className="list-item">
+                          <li key={idx} className="list-item">
                             {this.displayProfilePic(listItem)}
                             <div className="contact-data">
                               <span className="name">{listItem.name}</span>

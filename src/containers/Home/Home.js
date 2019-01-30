@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Modal } from "react-bootstrap";
-
+import data from "./../../assets/content/Home.json";
 import "./Home.css";
 
 class Home extends Component {
@@ -147,6 +147,10 @@ class Home extends Component {
     };
   }
 
+  componentWillMount() {
+    this.setState({ ...data });
+  }
+
   openModal = card => {
     this.setState({ currentCard: card, showModal: true });
   };
@@ -169,23 +173,23 @@ class Home extends Component {
             <section id="executiveBriefing" className="cards-container">
               {content[location].cards.map(card => {
                 return (
-<div key={card.title} className="card-container">
-<div className="card-header">
-<div className="title">{card.title}</div>
-</div>
-<div className="card-body">
-<div className="description">{card.description}</div>
-</div>
-<div className="btn-container">
-<a
-href={card.href}
-target="_blank"
-rel="noopener noreferrer"
->
-<div className="btn-request">{card.buttonText}</div>
-</a>
-</div>
-</div>
+                  <div key={card.title} className="card-container">
+                    <div className="card-header">
+                      <div className="title">{card.title}</div>
+                    </div>
+                    <div className="card-body">
+                      <div className="description">{card.description}</div>
+                    </div>
+                    <div className="btn-container">
+                      <a
+                        href={card.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <div className="btn-request">{card.buttonText}</div>
+                      </a>
+                    </div>
+                  </div>
                 );
               })}
             </section>

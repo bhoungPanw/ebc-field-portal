@@ -1,0 +1,114 @@
+{
+  "content": {
+    "ebc": {
+      "pageTitle": "Home",
+      "pageDescription": "As part of the Marketing organization, we work with Sales, Business Development and Investor Relations to plan and host briefings and customer meetings for external customer groups. We have two briefings centers: the Executive Briefing Center (EBC) at our headquarters in Santa Clara, CA, and the Customer Briefing Centre (CBC) located in Amsterdam. Both teams work closely together to ensure a quality experience, regardless of the center your customer chooses to visit.",
+      "whatWeDo": [
+        "Grow and accelerate business",
+        "Facilitate the discovery of new opportunities and expand footprint",
+        "Build and strengthen long-term customer relationships",
+        "Drive innovation leadership",
+        "Deliver a differentiated customer experience",
+        "Promote our position as the global cybersecurity leader"
+      ],
+      "cards": [
+        {
+          "title": "executive briefing",
+          "description": "Use this request to book briefings with customers and prospects. The request process is initiated in SFDC.",
+          "buttonText": "request",
+          "href": "https://paloaltonetworks.box.com/s/5qn55ghkdjyskxew7lhygbm4iace785w"
+        },
+        {
+          "title": "partner briefing",
+          "description": "Use this request to book briefings with partners. The request process is initiated in SFDC.",
+          "buttonText": "request",
+          "href": "https://paloaltonetworks.box.com/s/khi6ijmx1zxp5u2vpajnsg51vx1grzpo"
+        },
+        {
+          "title": "non-briefing event",
+          "description": "Use this request to book corporate meetings with attendees from external organizations, including industry and financial analysts, business development, and executive recruitment. The EBC does not host internal meetings. ",
+          "buttonText": "request",
+          "href": "https://paloaltonetworks.box.com/s/i4jckdnrenvb0rmi6zx1ftqspaicqxe8"
+        }
+      ],
+      "quickLinks": [
+        {
+          "title": "POC",
+          "href": "https://loop.paloaltonetworks.com/community/sales/world-wide-se-team/poc"
+        },
+        {
+          "title": "Cyber Range",
+          "href": "https://loop.paloaltonetworks.com/community/marketing/cyber-range"
+        },
+        {
+          "title": "How to Facilitate Your Briefing",
+          "href": "https://vimeo.com/paloaltonetworks/review/222740670/1ab4416c89"
+        },
+        {
+          "title": "NDA",
+          "href": "https://paloaltonetworks.tap.thinksmart.com/prod/portal/showworkflow/showworkflowdetail/dfd213e1-95d9-4c6d-ad42-92232d7ff856"
+        },
+        {
+          "title": "Fast Facts About Rooms",
+          "href": "https://paloaltonetworks.box.com/s/shsk6rjhfcpeznfqrfng6rie4yi44llh"
+        }
+      ],
+      "virtualTour": "https://my.matterport.com/show/?m=oXAv4CorLLi&brand=0"
+    },
+    "cbc": {
+      "pageTitle": "Home",
+      "pageDescription": "As part of the Marketing organization, we work with Sales, Business Development and Investor Relations to plan and host briefings and customer meetings for external customer groups. We have two briefings centers: the Executive Briefing Center (EBC) at our headquarters in Santa Clara, CA, and the Customer Briefing Centre (CBC) located in Amsterdam. Both teams work closely together to ensure a quality experience, regardless of the center your customer chooses to visit.",
+      "whatWeDo": [
+        "Grow and accelerate business",
+        "Facilitate the discovery of new opportunities and expand footprint",
+        "Build and strengthen long-term customer relationships",
+        "Drive innovation leadership",
+        "Deliver a differentiated customer experience",
+        "Promote our position as the global cybersecurity leader"
+      ],
+      "cards": [
+        {
+          "title": "executive briefing",
+          "description": "Use this request to book briefings with customers and prospects. The request process is initiated in SFDC.",
+          "buttonText": "request",
+          "href": "https://paloaltonetworks.box.com/s/5qn55ghkdjyskxew7lhygbm4iace785w"
+        },
+        {
+          "title": "partner briefing",
+          "description": "Use this request to book briefings with partners. The request process is initiated in SFDC.",
+          "buttonText": "request",
+          "href": "https://paloaltonetworks.box.com/s/khi6ijmx1zxp5u2vpajnsg51vx1grzpo"
+        },
+        {
+          "title": "non-briefing event",
+          "description": "Use this request to book corporate meetings with attendees from external organizations, including industry and financial analysts, business development, and executive recruitment. The EBC does not host internal meetings. ",
+          "buttonText": "request",
+          "href": "https://paloaltonetworks.box.com/s/i4jckdnrenvb0rmi6zx1ftqspaicqxe8"
+        }
+      ],
+      "quickLinks": [
+        {
+          "title": "POC",
+          "href": "https://loop.paloaltonetworks.com/community/sales/world-wide-se-team/poc"
+        },
+        {
+          "title": "Cyber Range",
+          "href": "https://loop.paloaltonetworks.com/community/marketing/cyber-range"
+        },
+        {
+          "title": "How to Facilitate Your Briefing",
+          "href": "https://vimeo.com/paloaltonetworks/review/222740670/1ab4416c89"
+        },
+        {
+          "title": "NDA",
+          "href": "https://paloaltonetworks.tap.thinksmart.com/prod/portal/showworkflow/showworkflowdetail/dfd213e1-95d9-4c6d-ad42-92232d7ff856"
+        },
+        {
+          "title": "Fast Facts About Rooms",
+          "href": "https://paloaltonetworks.box.com/s/yffafjz4gbaim27pndopvppguho7kexv"
+        }
+      ],
+      "virtualTour": "https://my.matterport.com/show/?m=UGuCMYdumB9"
+    }
+  }
+}

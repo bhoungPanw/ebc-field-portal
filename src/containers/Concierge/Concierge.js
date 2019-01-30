@@ -1,184 +1,15 @@
 import React, { Component } from "react";
 import "./Concierge.css";
+import data from "./../../assets/content/Concierge.json";
 
 class Concierge extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      content: {
-        ebc: {
-          recs: [
-            {
-              title: "recommended hotels",
-              list: [
-                {
-                  title: "Embassy Suites by Hilton Santa Clara Silicon Valley",
-                  address: "2885 Lakeside Dr. Santa Clara, CA 95054",
-                  phone: "(408) 496-6400"
-                },
-                {
-                  title: "The Plaza Suites Hotel Silicon Valley",
-                  address: "3100 Lakeside Dr. Santa Clara, CA 95054 ",
-                  phone: "(408) 748-9800"
-                },
-                {
-                  title: "Santa Clara Marriott",
-                  address: "2700 Mission College Blvd. Santa Clara, CA 95054",
-                  phone: "(408) 988-1500"
-                },
-                {
-                  title: "Hilton Santa Clara",
-                  address: "4949 Great America Pkwy. Santa Clara, CA 95054",
-                  phone: "(408) 330-0001"
-                },
-                {
-                  title: "Embassy Suites by Hilton Santa Clara Silicon Valley",
-                  address: "2885 Lakeside Dr. Santa Clara, CA 95054",
-                  phone: "(408) 496-6400"
-                },
-                {
-                  title: "Hotel Valencia Santana Row ",
-                  address: "355 Santana Row San Jose, CA 95128",
-                  phone: "(408) 551-0010"
-                }
-              ]
-            },
-            {
-              title: "recommended restaurants",
-              list: [
-                {
-                  title: "Birk’s Restaurant",
-                  address: "3955 Freedom Circle Santa Clara, CA 95054",
-                  phone: "(408) 980-6400"
-                },
-                {
-                  title: "Fleming’s Prime Steakhouse & Wine Bar",
-                  address: "2762 Augustine Dr. #110 Santa Clara, CA 95054",
-                  phone: "(408) 346-4557"
-                },
-                {
-                  title: "Il Fornaio",
-                  address: "2752 Augustine Dr. #120 Santa Clara, CA 95054",
-                  phone: "(408) 217-8844"
-                },
-                {
-                  title: "Bourbon Steak Levi’s® Stadium",
-                  address: "4900 Marie P. DeBartolo Way Santa Clara, CA 95054",
-                  phone: "(408) 217-2490"
-                },
-                {
-                  title: "Nemea Greek Taverna",
-                  address: "96 S. First St. San Jose, CA 95113",
-                  phone: "(408) 279-4225"
-                }
-              ]
-            },
-            {
-              title: "recommended transportation",
-              list: [
-                {
-                  title: "Skylark Limousine",
-                  address: "(408) 980-6400"
-                }
-              ],
-              downloadHref: {
-                label: "Want to save a copy of the Concierge list?",
-                href:
-                  "https://paloaltonetworks.box.com/s/7pyekhymrybqq5s94qiy56e2oqv948df"
-              }
-            }
-          ]
-        },
-        cbc: {
-          recs: [
-            {
-              title: "recommended hotels",
-              list: [
-                {
-                  title: "Jaz Amsterdam",
-                  address:
-                    "De Passage 90, 1101 AX Amsterdam-Zuidoost, TheNetherlands",
-                  phone: "+31 (0)20 2105800"
-                },
-                {
-                  title: "Holiday Inn Amsterdam – Arena Towers",
-                  address:
-                    "Hoogoorddeef 66a, 1101 BE Amsterdam, The Netherlands",
-                  phone: "+31 (0)20 7979198"
-                },
-                {
-                  title: "Courtyard Marriott Amsterdam Arena Atlas",
-                  address:
-                    "Hoogoorddreef 1, 1101 BA Amsterdam, The Netherlands",
-                  phone: "+31(0)20 241500"
-                },
-                {
-                  title: "Hampton by Hilton Amsterdam / ArenaBoulevard",
-                  address: "Hoekenrode 1,Amsterdam,1102 BR,Netherlands",
-                  phone: "+31(0)208203200"
-                }
-              ],
-              downloadHref: {
-                label: "Want to save a copy of the hotels list?",
-                href:
-                  "https://paloaltonetworks.app.box.com/s/74c03fr370z73weljalqt07ukdbvj6ql"
-              }
-            },
-            {
-              title: "recommended restaurants",
-              list: [
-                {
-                  title: "Loetje – Dutch cuisine",
-                  address: "Johannes Vermeerstraat 52, 1071 DT Amsterdam",
-                  phone: "+31 (0)206628173"
-                },
-                {
-                  title: "Mr Porter – Modern steakhouse and a chic lounge",
-                  address:
-                    "Hoogoorddeef 66a, 1101 BE Amsterdam, The Netherlands",
-                  phone: "+31 (0)208113399"
-                },
-                {
-                  title: "Café Caron – French cuisine in a cozy atmosphere",
-                  address: "Frans Halsstraat 28 H, Amsterdam",
-                  phone: "+31 (0)20 6758668"
-                },
-                {
-                  title:
-                    "D' Vijff Vlieghen – Mediterranean kitchen in a beautiful old Dutch monument building",
-                  address: "Spuistraat 294-302, 1012 VX Amsterdam",
-                  phone: "+31 (0)205304060"
-                }
-              ],
-              downloadHref: {
-                label:
-                  "For more options on restaurants, bars and city entertainment, please see the file.",
-                href:
-                  "https://paloaltonetworks.box.com/s/e7k3y2i3enwy8me90kfdss508m5zci4j"
-              }
-            },
-            {
-              title: "transportation services",
-              list: [
-                {
-                  title: "Taxi Marcus",
-                  address: "available 24/7, accepts cash (EUR) or credit card",
-                  phone: "+31(0)20-6595565"
-                },
-                {
-                  title: "VIP Coach (for groups of 10 and above) ",
-                  address: "+31(0)20-6599808"
-                },
-                {
-                  title: "Executive Luxury Limousine Transport",
-                  address: "+31(0)20-6599808"
-                }
-              ]
-            }
-          ]
-        }
-      }
-    };
+    this.state = {};
+  }
+
+  componentWillMount() {
+    this.setState({ ...data });
   }
 
   renderCatering = v => {
@@ -253,9 +84,9 @@ class Concierge extends Component {
       <div className="ebc-field-portal-Concierge">
         <div>
           <div className="App-body">
-            {content[location].recs.map(item => {
+            {content[location].recs.map((item, idx) => {
               return (
-                <div key={item.title} className="concierge-content-container">
+                <div key={idx} className="concierge-content-container">
                   <div className="page-title-container">
                     <p className="page-title fancy">
                       <span>{item.title}</span>
@@ -263,9 +94,9 @@ class Concierge extends Component {
                   </div>
                   <div className="list concierge">
                     <ul>
-                      {item.list.map(listItem => {
+                      {item.list.map((listItem, idx) => {
                         return (
-                          <li className="list-item">
+                          <li key={idx} className="list-item">
                             <span className="name">
                               {listItem.title}
                               <br />

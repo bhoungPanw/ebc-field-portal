@@ -205,11 +205,11 @@ class BriefingTopics extends Component {
             <section className="briefing-topics">
               {content[location].briefingTopics.map(c => {
                 return (
-                  <div className="topics-container">
+                  <div key={c.topics} className="topics-container">
                     <h3 className="title">{c.category}</h3>
                     <ul className="topics">
                       {c.topics.map(topic => {
-                        return <li>{topic}</li>;
+                        return <li key={topic}>{topic}</li>;
                       })}
                     </ul>
                   </div>

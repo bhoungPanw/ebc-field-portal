@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Directions.css";
+import data from "./../../assets/content/Directions.json";
 
 class Directions extends Component {
   constructor(props) {
@@ -31,6 +32,10 @@ class Directions extends Component {
         }
       }
     };
+  }
+
+  componentWillMount() {
+    this.setState({ ...data });
   }
 
   openModal = card => {
